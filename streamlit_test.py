@@ -24,7 +24,5 @@ if user_id == "suyoung" and user_password == '1234':
     image_files = "Welcome.png", 'Verneer.png', 'Gogh.png', 'Munch.png', 'Klimt.jpg', 'ShinYoonbok.png'
     sel_index =  sel_options.index(user_opt)
     image_file = image_files[sel_index]
-    img_local = Image.open(f'img/{image_file}')
+    img_local = Image.open(f'{image_file}')
     st.image(img_local, caption=user_opt)
-    
-
